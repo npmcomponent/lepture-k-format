@@ -1,0 +1,18 @@
+{
+  "name": "k-format",
+  "repo": "lepture/k-format",
+  "description": "Fix keyboard behavior for format.",
+  "version": "0.1.0",
+  "keywords": [],
+  "dependencies": {
+    "yields/k": "*",
+    "lepture/caret": "*",
+    "lepture/format": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

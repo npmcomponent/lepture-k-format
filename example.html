@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>K format</title>
+  <style>
+    .container {
+      max-width: 680px;
+      margin: 60px auto;
+      border-top: 1px solid #ddd;
+      min-height: 300px;
+      outline: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="editor" class="container" contenteditable></div>
+  <script src="build/build.js"></script>
+  <script>
+    require('k-format')(document.getElementById('editor'));
+  </script>
+</body>
+</html>
