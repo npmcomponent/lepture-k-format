@@ -11,8 +11,9 @@ var format = require('format');
 var Caret = require('caret');
 
 
-module.exports = function(editable) {
-  var caret = new Caret(editable);
+module.exports = function(editable, options) {
+  options = options || {};
+  var caret = options.caret || new Caret(editable);
   var k = keyboard(editable);
 
   k('backspace', function(e) {
@@ -31,7 +32,7 @@ module.exports = function(editable) {
       format.p();
     }
 
-    if (isblank(editable)) {
+    if (!options.blank && isblank(editable)) {
       // don't put too many blank lines
       e.preventDefault();
       return false;
