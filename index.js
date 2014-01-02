@@ -16,6 +16,8 @@ module.exports = function(editable, options) {
   var caret = options.caret || new Caret(editable);
   var k = keyboard(editable);
 
+  var spanformats  = ['bold', 'italic', 'strike', 'underline'];
+
   k('backspace', function(e) {
     if (isblank(editable)) {
       e.preventDefault();
@@ -31,7 +33,13 @@ module.exports = function(editable, options) {
       // div -> p
       format.p();
     }
-
+    for (var i = 0; i < spanformats.length; i++) {
+      (function(name) {
+        if (format.is(name)) {
+          format(name);
+        }
+      })(spanformats[i]);
+    }
     if (!options.blank && isblank(editable)) {
       // don't put too many blank lines
       e.preventDefault();
