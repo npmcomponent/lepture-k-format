@@ -3,7 +3,7 @@
  *
  * Fix keyboard behavior for editable format.
  *
- * Copyright (c) 2013 by Hsiaoming Yang.
+ * Copyright (c) 2013 - 2014 by Hsiaoming Yang.
  */
 
 var keyboard = require('k');
@@ -97,8 +97,6 @@ module.exports = function(editable, options) {
       } else {
         format.indent();
       }
-    } else {
-      format.html(' ');
     }
     return false;
   });
