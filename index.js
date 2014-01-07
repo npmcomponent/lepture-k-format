@@ -100,6 +100,7 @@ module.exports = function(editable, options) {
     }
     return false;
   });
+  return k;
 };
 
 
