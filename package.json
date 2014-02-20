@@ -1,0 +1,13 @@
+{
+  "name": "lepture-k-format",
+  "description": "Fix keyboard behavior for format.",
+  "version": "0.1.0",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {
+    "yields-k": "git://github.com/npmcomponent/yields-k.git",
+    "lepture-caret": "git://github.com/npmcomponent/lepture-caret.git",
+    "lepture-format": "git://github.com/npmcomponent/lepture-format.git"
+  },
+  "license": "MIT"
+}

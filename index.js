@@ -6,9 +6,9 @@
  * Copyright (c) 2013 - 2014 by Hsiaoming Yang.
  */
 
-var keyboard = require('k');
-var format = require('format');
-var Caret = require('caret');
+var keyboard = require('yields-k');
+var format = require('lepture-format');
+var Caret = require('lepture-caret');
 
 
 module.exports = function(editable, options) {
